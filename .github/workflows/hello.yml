@@ -20,6 +20,6 @@ jobs:
 
     - name: Executando um ou mias comandos 
       run: |
-          ls - l
+          ls -l
           echo "fim do processo"
           
