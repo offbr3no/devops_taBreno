@@ -16,13 +16,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Executando primeiro comando
-    run: 'echo "amo DEVOPS:)"
+      run: echo "amo DEVOPS:)"
 
     - name: Executando um ou mias comandos 
-       run: |
+      run: |
           ls - l
-          echo fim do processo
-        
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+          echo "fim do processo"
+          
